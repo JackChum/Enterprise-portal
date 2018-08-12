@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+        <title>{dede:global.cfg_webname/}</title>
+        <meta name="description" content="{dede:global.cfg_description/}" />
+        <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+        <script type="text/javascript">var appPath = '/',
+            currentNode = '',
+            currentID = '0',
+            channelNode = '';
+            language = 'zh-cn';</script>
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/zj.cms.js"></script>
+        <script type="text/javascript">jQuery(function() {
+                zj.addHits();
+                zj.setCurrent('m01');
+            });</script>
+        <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.3.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.superslide.2.1.1.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/common.js"></script>
+        <script type="text/javascript">function setNav(id) {
+                var n = $(".nav ul li a").eq(id - 1);
+                $(n).addClass("on");
+            }</script>
+
+    </head>
+    
+    <body>
+        
+		{dede:include filename='head.htm'/}
+		
+        <div class="content">
+            <div class="before"></div>
+            <div class="fullSlide">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href='' style="background-image: url({dede:global.cfg_templets_skin/}/images/111543013.jpg);"></a>
+                            <span class="bannerImg">
+                                <img src="{dede:global.cfg_templets_skin/}/picture/banner_zi1.png"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="shipin">
+                    <div class="tit">视频观赏</div>
+                    <div id="slideBox" class="slideBox">
+                        <div class="bd">
+                            <ul>
+                               {dede:arclist typeid=22 row=3 orderby='pubdate' addfields='video' channelid='17' }
+                                <li>
+                                    <a>
+                                        <iframe src="[field:video/]" allowFullScreen="true" quality="high" width="271" height="181" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></iframe>
+                                    </a>
+                                </li>
+							   {/dede:arclist}
+                                
+                            </ul>
+                            <a class="prev" href="javascript:void(0)"></a>
+                            <a class="next" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_news auto">
+                    <div class="hd">
+                        <ul>
+                            <li>新闻资讯</li>
+                            </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="news clear">
+                            <div class="tianqi">
+                                <div class="tit">天气</div>
+                                <iframe allowtransparency="true" frameborder="0" width="140" height="109" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=1&d=1&bd=0&k=&f=ffffff<f=009944&htf=cc0000&q=0&e=1&a=1&c=54511&w=140&h=109&align=center"></iframe>
+                            </div>
+                            <div class="img">
+                                <img src="{dede:global.cfg_templets_skin/}/picture/img1.jpg"></div>
+                            <dl>
+                                <div class="tit">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/title1.png"></div>
+								{dede:arclist typeid=6 row=5 orderby='pubdate' titlelen='70'}
+                                <dd>
+                                    <span>[[field:pubdate function=MyDate('m-d',@me)/]]</span>
+                                    <a href='[field:arcurl/]'>[field:title/]</a></dd>
+								{/dede:arclist}
+                                
+                            </dl>
+                           <!-- <div class="daohang">
+                                <div class="tit">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/title2.png">
+                                    <p>好好了解我们吧~</p>
+                                </div>
+                                <a class="tianmao" href="{dede:global.cfg_tmall/}">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/tianmao.png">看看天猫</a>
+                                <a class="smile" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=&Menu=yes">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/smile.png">在线咨询</a></div> -->
+                        </div>
+                        <div class="product">
+                            <ul>
+								{dede:arclist typeid=15 row=3 orderby='pubdate'}
+                                <li>
+                                    <div class="pic">
+                                        <a href='[field:arcurl/]'>
+                                            <img src='[field:picname/]' width="197" height="132"></a>
+                                    </div>
+                                    <p>
+                                        <a href='[field:arcurl/]'>[field:title/]</a></p>
+                                </li>
+								{/dede:arclist}
+                                
+                            </ul>
+                             <div class="daohang">
+                                <div class="tit">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/title2.png">
+                                    <p>好好了解我们吧~</p>
+                                </div>
+                                <a class="tianmao" href="{dede:global.cfg_tmall/}">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/tianmao.png">看看天猫</a>
+                                <a class="smile" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=&Menu=yes">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/smile.png">在线咨询</a></div>
+                        </div>
+                        <div class="product">
+                            <ul>
+								{dede:arclist typeid=18 row=3 orderby='pubdate'}
+                                <li>
+                                    <div class="pic">
+                                        <a href='[field:arcurl/]'>
+                                            <img src='[field:picname/]' width="197" height="132"></a>
+                                    </div>
+                                    <p>
+                                        <a href='[field:arcurl/]'>[field:title/]</a></p>
+                                </li>
+								{/dede:arclist}
+                                
+                            </ul>
+                             <div class="daohang">
+                                <div class="tit">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/title2.png">
+                                    <p>好好了解我们吧~</p>
+                                </div>
+                                <a class="tianmao" href="{dede:global.cfg_tmall/}">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/tianmao.png">看看天猫</a>
+                                <a class="smile" href="tencent://message/?uin={dede:global.cfg_qq/}&Site=&Menu=yes">
+                                    <img src="{dede:global.cfg_templets_skin/}/picture/smile.png">在线咨询</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+			function doSearch() {
+                var word = jQuery('#search').val();
+                if (word == '请输入关键字' || word == "") {
+                    alert('请输入搜索关键字');
+                    $("#search").focus();
+                    return;
+                }
+                document.location.href = 'search.aspx?word=' + escape(word);
+            }
+		</script>
+        {dede:include filename='footer.htm'/}
+        <script type="text/javascript">setNav(1);</script></body>
+
+</html>
+<!--main.aspx-->

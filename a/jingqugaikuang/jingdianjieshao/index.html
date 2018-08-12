@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+        <title>{dede:global.cfg_webname/}</title>
+        <meta name="description" content="{dede:global.cfg_description/}" />
+        <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+        <script type="text/javascript">var appPath = '/',
+            currentNode = '',
+            currentID = '0',
+            channelNode = '';
+            language = 'zh-cn';</script>
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/zj.cms.js"></script>
+        <script type="text/javascript">jQuery(function() {
+                zj.addHits();
+                zj.setCurrent('m01');
+            });</script>
+        <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.3.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.superslide.2.1.1.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/common.js"></script>
+        <script type="text/javascript">function setNav(id) {
+                var n = $(".nav ul li a").eq(id - 1);
+                $(n).addClass("on");
+            }</script>
+        <script type="text/javascript">if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+                location.replace('http://jgslv65.xm40.host.35.com/m/main.aspx');
+            }</script>
+    </head>
+    
+    <body>
+        
+		{dede:include filename='head.htm'/}
+		
+        <div class="content">
+            <div class="before"></div>
+            <div class="fullSlide">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href='' style="background-image: url({dede:global.cfg_templets_skin/}/images/111543013.jpg);"></a>
+                            <span class="bannerImg">
+                                <img src="{dede:global.cfg_templets_skin/}/picture/banner_zi1.png"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+      
+		</div>
+        <script type="text/javascript">
+			function doSearch() {
+                var word = jQuery('#search').val();
+                if (word == '请输入关键字' || word == "") {
+                    alert('请输入搜索关键字');
+                    $("#search").focus();
+                    return;
+                }
+                document.location.href = 'search.aspx?word=' + escape(word);
+            }
+		</script>
+        {dede:include filename='footer.htm'/}
+        <script type="text/javascript">setNav(1);</script></body>
+
+</html>
+<!--main.aspx-->

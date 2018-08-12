@@ -1,0 +1,1 @@
+INSERT INTO `dede_flink` VALUES('10','1','http://www.baidu.com','百度','','','/uploads/flink/1806121001124636.jpg','1528768872','1','1');

@@ -1,0 +1,74 @@
+<div class="header">
+            <div class="top">
+                <div class="logo">
+                    <img src="{dede:global.cfg_templets_skin/}/picture/logo.png"></div>
+                <div class="logo1">
+                    <img src="{dede:global.cfg_templets_skin/}/picture/logo1.gif"></div>
+
+                <div class="nav">
+                    <ul class="clear">
+                        <li>
+                            <a href='/'>网站首页</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            {dede:type typeid='1'}<a href='[field:typelink /]'>[field:typename /]</a>{/dede:type}
+                            <div class="line"></div>
+                            <div class="down sub clear">
+                                <img src="{dede:global.cfg_templets_skin/}/picture/sub_img1.jpg">
+                                <div class="right">
+                                    <p>{dede:sql sql='Select description from dede_arctype where id=1'} [field:description/] {/dede:sql}</p>
+                                    <dl id='dl'>{dede:channel type='son' typeid='1'}
+                                        <a href='javascript:return false;' class=''>[field:typename/]</a>{/dede:channel}
+                                        <script>
+											$(function() {
+                                                $('#dl a:nth-child(odd)').addClass('a1');
+                                            })
+										</script>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            {dede:type typeid='6'}<a href='[field:typelink /]'>[field:typename /]</a>{/dede:type}
+                            <div class="line"></div>
+
+                        </li>
+
+
+
+                        <li>
+                            {dede:type typeid='36'}<a href='[field:typelink /]'>[field:typename /]</a>{/dede:type}
+                            <div class="line"></div>
+                        </li>
+                      
+                        <li>
+                            {dede:type typeid='33'}<a href='[field:typelink /]'>[field:typename /]</a>{/dede:type}
+                            <div class="line"></div>
+                        </li>
+
+                        
+                        <li>
+                            {dede:type typeid='23'}<a href='[field:typelink /]'>[field:typename /]</a>{/dede:type}
+                            <div class="line"></div>
+                            <div class="down sub2">
+                                <dl class="menu clear">
+									{dede:channel type='son' row='3' typeid='23'}
+                                    <dd>
+                                        <a href='[field:typeurl/]'>
+                                            <p>[field:typename/]</p>
+                                            <div class="pic">
+                                                <img src='[field:arcpic/]'></div>
+                                        </a>
+                                    </dd>
+									{/dede:channel}
+                                    
+                                </dl>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_myad` VALUES('1','0','0','gzh','微信公中号','0','1528769413','1531361413','<a href=\"\"><img src=\"/templets/default/picture/erweima1.jpg\" width=\"80\" height=\"80\" border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('2','0','0','smdp','扫码订票','0','1528769468','1531361468','<a href=\"\"><img src=\"/templets/default/picture/erweima2.jpg\" width=\"80\" height=\"80\" border=\"0\" /></a>','');

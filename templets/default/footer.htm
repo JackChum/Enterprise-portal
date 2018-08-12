@@ -1,0 +1,44 @@
+<div class="footer">
+            <div class="foot clear">
+                <div class="left">
+                    <ul class="f_nav clear">
+                        <li>
+                            <a href='/'>回到首页</a></li>
+						{dede:channel type='top'}
+                        <li>
+                            <a href='[field:typeurl/]'>[field:typename/]</a></li>
+						{/dede:channel}
+                        
+                    </ul>
+                    <p>{dede:global.cfg_powerby/}
+                        <br>热线电话：{dede:global.cfg_dianhua/} 单位地址：{dede:global.cfg_add/}
+                        <br>{dede:global.cfg_beian/} </p>
+                    <!-- <div class="link clear">
+                        <div class="tit">友情链接</div>
+                        <div class="cont">
+                            <ul>
+                                {dede:flink row='24' type='image' titlelen="24" typeid="0"} [field:link /] {/dede:flink}
+                            </ul>
+                        </div>
+                    </div> -->
+                   <script>$(".link").slide({
+                            mainCell: ".cont ul",
+                            autoPlay: true,
+                            effect: "leftMarquee",
+                            vis: 6,
+                            interTime: 30
+                        });</script> 
+                </div>
+                <!--<div class="right">
+                    <a class="weibo" href="{dede:global.cfg_weibo/}">
+                        <img src="{dede:global.cfg_templets_skin/}/picture/weibo.jpg"></a>
+                    <a class="space" href="http://user.qzone.qq.com/{dede:global.cfg_qq/}/">
+                        <img src="{dede:global.cfg_templets_skin/}/picture/kongjian.jpg"></a>
+                    <div class="erweima">
+                        <p>关注公众号
+                            {dede:myad name='gzh'/}</p>
+                        <p>扫码订票
+                            {dede:myad name='smdp'/}</p></div>
+                </div>-->
+            </div>
+        </div>

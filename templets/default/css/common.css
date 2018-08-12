@@ -1,0 +1,59 @@
+﻿/* CSS Document */
+@charset "UTF-8";
+body { font-family: "Microsoft YaHei", Arial; font-size: 12px; margin:0; padding:0; color:#333; overflow-x:hidden; background-color: #fff; }
+* { margin:0; padding:0 }
+div, ul, li, h1, h2, h3, h4, h5, h6, img, p, dl, dt, dd, ol, th, td { margin: 0px; padding: 0px; }
+
+li { list-style-type: none; }
+form, input, button, option, textarea, select { margin: 0px; padding: 0px; }
+input, button, textarea, select { font:100% Tahoma, Helvetica, Arial, sans-serif; }
+a { text-decoration: none; cursor:pointer; outline:none; blr:expression(this.onFocus=this.blur());
+color:#333333; }
+a:link { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+th { font-weight:normal; }
+img { border: 0; }
+h3 { font-size:14px;  font-weight:bold; }
+h4 { font-size: 12px;    font-weight:bold;}
+.clear { clear: both; }
+.clear:after{ display: block; clear:both;content:"";}
+.copy { font-family:Arial, Helvetica, sans-serif; }
+table { font-size:inherit; font:100%; }
+img { border:none;  }
+
+.detail .cont { padding: 20px 20px; height:auto !important; height:375px; min-height:375px; }
+.detail .tit { height: 40px; line-height: 40px; text-align: center; font-weight: bold; border-bottom: 1px solid #ccc; overflow:hidden; }
+.detail .related { padding:6px 0; text-align: center; }
+.detail .related span { padding: 0 10px; }
+.detail .text { padding: 20px; line-height: 24px; }
+.detail .text .photo { text-align: center; }
+.detail .text .photo  img{width:100%;}
+.detail .other { padding: 8px 10px; width: 100%; }
+.detail .other li { line-height: 24px; }
+.detail .print { padding: 8px 0; text-align: right; clear: both; }
+.detail .print a { margin-right: 20px; }
+.detail .text .pro_photo { text-align: center; }
+
+.ny_msg .cont { line-height:24px;  }
+.ny_msg .cont .bridge { line-height: 40px; color:#858181; text-align: right; padding-right:15px;}
+.ny_msg .cont .bridge a {color:#858181; }
+.ny_msg .cont .welcome { width:100%; border-top: 1px dashed #ccc; height:98px; text-align: center; }
+.ny_msg .cont .welcome img { margin-top:31px; }
+.ny_msg .cont .msg_form { width: 650px; overflow:hidden; margin: 0 auto; }
+.ny_msg .cont .msg_form ul { width:561px; }
+.ny_msg .cont .msg_form li { float:left; margin-bottom:9px; margin-right:22px; display:inline; }
+.ny_msg .cont .msg_form li input { padding-left:10px; color:#969696; width:260px; height:40px; border:0px; line-height:40px; font-size:14px; background:#ccc;  }
+.ny_msg .cont .msg_form li textarea { color:#969696;width:569px; height:146px; background:#ccc; border:0px;  overflow:auto; font-size:14px; padding:10px;}
+.ny_msg .msglist{overflow:hidden;_zoom:1;}
+.ny_msg .msglist ul{margin:-22px 0 0 0;}
+.ny_msg .msglist ul li{margin-bottom:24px; border-top:1px solid #8d8d8d; padding-top:21px;}
+.ny_msg .msglist ul li p{height:40px;line-height:40px;padding-left:18px; background:#f0f0f0; border-bottom:1px solid #fefdfe;  color:#59636c;}
+.ny_msg .msglist ul li b.tit{font-size:14px;font-weight:bold;  color:#000;}
+.ny_msg .msglist ul li div{ color:#59636c; line-height:18px;border-bottom:1px solid #fefdfe;padding:15px 18px 20px 18px; background:#e6e9ec; }
+.ny_msg .msglist ul li p.msger{background:#d8dde0;}
+.ny_msg .msglist ul li .msgText{background:#d8dde0;}
+.ny_msg .msglist ul li .msgReply{border-bottom:none;}
+.ny_msg .msgpages{text-align:center;}
+.ny_msg .msgpages a{ margin:0 1px; font-family:Arial;  color:#666666;}
+.ny_msg .msgpages span.msgpageAll{color:#666666;}

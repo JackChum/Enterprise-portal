@@ -1,0 +1,1 @@
+INSERT INTO `dede_addon17` VALUES('142','22','','','127.0.0.1','http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=e20ba3940e90b1710ae5b93bb511ff12&tvId=1102785300&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%');

@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','光引发剂EDB','光引发剂EDB 引发','1','0','1528762191','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','九宫山','九宫山 九宫山','13','52','1528854301','0','0');

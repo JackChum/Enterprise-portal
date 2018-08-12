@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+        <script type="text/javascript">var appPath = '/',
+            currentNode = '715',
+            currentID = '0',
+            channelNode = 'product';
+            language = 'zh-cn';</script>
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/zj.cms.js"></script>
+        <script type="text/javascript">jQuery(function() {
+                zj.addHits();
+                zj.setCurrent('m01');
+            });</script>
+        <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.3.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.superslide.2.1.1.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/common.js"></script>
+        <script type="text/javascript">function setNav(id) {
+                var n = $(".nav ul li a").eq(id - 1);
+                $(n).addClass("on");
+            }</script>
+    </head>
+    
+    <body style="background-image: url({dede:field.typeid runphp='yes'}$ID = @me; $sql = "SELECT * FROM `dede_arctype` WHERE id=$ID";$query = mysql_query($sql);$row=mysql_fetch_array($query); $relID = "$row[reid]"; if($relID == 0) {@me = $row[arcpic];}else{$sql = "SELECT `arcpic` FROM `dede_arctype` WHERE id=$relID";$query = mysql_query($sql);$row=mysql_fetch_array($query); @me = $row[arcpic];}{/dede:field.typeid});">
+        {dede:include filename='head.htm'/}
+        <div class="before"></div>
+        <div class="ny_pro ny_cont">
+            <div class="ny_top">
+                <img src="{dede:global.cfg_templets_skin/}/picture/pro_top.jpg"></div>
+            <div class="ny_title clear">
+                <p>{dede:field name='position'/}</p>
+                {dede:include filename='nav.htm'/}
+            </div>
+            <div class="cont clear">
+                <ul class="main">
+					{dede:list row='999' pagesize='3' titlelen='80'}
+                    <li class="p_show">
+                        <div class="pic">
+                            <a href='[field:arcurl/]'>
+                                <img src='[field:picname/]'></a>
+                        </div>
+                        <div class="right">
+                            <a href='[field:arcurl/]'>
+                                <h3>[field:title/]</h3></a>
+                            <p>
+                            </p>
+                            <a class="btn more" href='[field:arcurl/]'>了解更多 》</a>
+                            <a class="btn book" href="[field:global.cfg_tmall/]">预订 》</a></div>
+                    </li>
+					{/dede:list}
+                    
+                    <style>
+							
+							.thisc{
+								background: url({dede:global.cfg_templets_skin/}/images/page_bg.png) center no-repeat;
+								color: #fff;
+								background-size: 100% 100%;
+								display: inline-block;
+								text-align: center;
+								margin-right: 7px;
+								padding: 0 5px;
+								min-width: 23px;
+								height: 29px;
+								line-height: 29px;
+								border: 1px #d3d3d3 solid;
+								
+								font-size: 12px;
+								border-radius: 8px;
+								-webkit-transition: all .1s linear;
+								transition: all .1s linear;
+							}
+						
+							
+						</style>
+						
+                        <div class="page_change">
+                            {dede:pagelist listitem='pageno,' /}</div>
+                </ul>
+                {dede:include filename='rightlist.htm'/}
+            </div>
+            {dede:include filename='right.htm'/}
+           
+        </div>
+        
+        {dede:include filename='footer.htm'/}
+        <script type="text/javascript">setNav(4);</script></body>
+
+</html>

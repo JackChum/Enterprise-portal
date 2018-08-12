@@ -1,0 +1,18 @@
+<div class="side">
+                    <div class="tel">
+                        <img src="{dede:global.cfg_templets_skin/}/picture/ny_tel.png" width="257" height="41"></div>
+                    <div class="img">
+                        <!--257 172--></div>
+                    <div class="tit">图文欣赏</div>
+                    <ul class="clear">
+						{dede:arclist row='1000' pagesize='8' titlelen='20' typeid='18' orderby='rand'}
+                        <li>
+                            <a href='[field:arcurl/]'>
+                                <img src='[field:picname/]'>
+                                <p>[field:title/]</p>
+                            </a>
+                        </li>
+						{/dede:arclist}
+                        
+                    </ul>
+                </div>

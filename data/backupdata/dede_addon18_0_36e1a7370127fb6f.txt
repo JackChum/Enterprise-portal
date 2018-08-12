@@ -1,0 +1,5 @@
+INSERT INTO `dede_addon18` VALUES('143','29','','','127.0.0.1','¥55.00元','https://jgsjq.alitrip.com/shop/view_shop.htm','http://piao.qunar.com/ticket/detail_1524980261.html','http://www.ly.com/scenery/BookSceneryTicket_10077.html');
+INSERT INTO `dede_addon18` VALUES('144','29','','','127.0.0.1','¥55.00元','https://jgsjq.alitrip.com/shop/view_shop.htm','http://piao.qunar.com/ticket/detail_1524980261.html','http://www.ly.com/scenery/BookSceneryTicket_10077.html');
+INSERT INTO `dede_addon18` VALUES('145','29','','','127.0.0.1','¥55.00元','https://jgsjq.alitrip.com/shop/view_shop.htm','http://piao.qunar.com/ticket/detail_1524980261.html','http://www.ly.com/scenery/BookSceneryTicket_10077.html');
+INSERT INTO `dede_addon18` VALUES('146','29','','','127.0.0.1','¥55.00元','https://jgsjq.alitrip.com/shop/view_shop.htm','http://piao.qunar.com/ticket/detail_1524980261.html','http://www.ly.com/scenery/BookSceneryTicket_10077.html');
+INSERT INTO `dede_addon18` VALUES('147','29','','','127.0.0.1','¥55.00元','https://jgsjq.alitrip.com/shop/view_shop.htm','http://piao.qunar.com/ticket/detail_1524980261.html','http://www.ly.com/scenery/BookSceneryTicket_10077.html');

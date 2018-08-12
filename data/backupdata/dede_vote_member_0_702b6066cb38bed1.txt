@@ -1,0 +1,1 @@
+INSERT INTO `dede_vote_member` VALUES('1','1','admin','1528709504');

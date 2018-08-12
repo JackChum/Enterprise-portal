@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+        <script type="text/javascript">var appPath = '/',
+            currentNode = '728',
+            currentID = '0',
+            channelNode = '709';
+            language = 'zh-cn';</script>
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/zj.cms.js"></script>
+        <script type="text/javascript">jQuery(function() {
+                zj.addHits();
+                zj.setCurrent('m01');
+            });</script>
+        <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.3.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.superslide.2.1.1.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/common.js"></script>
+        <script type="text/javascript">
+			function setNav(id) {
+                var n = $(".nav ul li a").eq(id - 1);
+                $(n).addClass("on");
+            }
+		</script>
+
+    </head>
+	<body style="background-image: url({dede:field.typeid runphp='yes'}$ID = @me; $sql = "SELECT * FROM `dede_arctype` WHERE id=$ID";$query = mysql_query($sql);$row=mysql_fetch_array($query); $relID = "$row[reid]"; if($relID == 0) {@me = $row[arcpic];}else{$sql = "SELECT `arcpic` FROM `dede_arctype` WHERE id=$relID";$query = mysql_query($sql);$row=mysql_fetch_array($query); @me = $row[arcpic];}{/dede:field.typeid});">
+        {dede:include filename='head.htm'/}
+        <div class="before"></div>
+        <div class="booking ny_cont">
+            <div class="ny_top">
+                <img src="{dede:global.cfg_templets_skin/}/picture/yuding_top.jpg"></div>
+            <div class="ny_title clear">
+                <p>{dede:field name='position'/}</p>
+                <div class="title">如有任何问题请联系景区：{dede:global.cfg_dianhua/}</div></div>
+            <div class="cont">
+                <ul>
+					{dede:list row='99' pagesize='3' titlelen='60'}
+                    <li class="clear">
+                        <div class="pic">
+                            <img src='[field:picname/]'>
+                            <!--<p><img src="{dede:global.cfg_templets_skin/}/picture/yuding_img1.jpg"></p>--></div>
+                        </a>
+                        <div class="right">
+                            <div class="tit">[field:title/]</div>
+                            <span>[field:shorttitle/]</span>
+                            <p>
+                            </p>
+                            <h3>[field:jg/]</h3>
+                            <div class="btn">
+                                <a class="tit">点击购票
+                                    <a>
+                                        <dl>
+                                            <dd>
+                                                <a href="[field:tmall/]" target="_blank">
+                                                    <img src="/templets/default/picture/yuding_img3.jpg"></a></dd>
+                                            <dd>
+                                                <a href="[field:go/]" target="_blank">
+                                                    <img src="/templets/default/picture/yuding_img4.jpg"></a>
+                                            </dd>
+                                            <dd>
+                                                <a href="[field:city/]" target="_blank">
+                                                    <img src="/templets/default/picture/yuding_img5.jpg"></a>
+                                            </dd>
+                                        </dl>
+                            </div>
+                            <div class="share1">分享到：
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+                                    <a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a>
+                                    <a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+                                    <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+                                </div>
+                            </div>
+                            <script>window._bd_share_config = {
+                                    "common": {
+                                        "bdSnsKey": {},
+                                        "bdText": "",
+                                        "bdMini": "2",
+                                        "bdMiniList": false,
+                                        "bdPic": "",
+                                        "bdStyle": "0",
+                                        "bdSize": "16"
+                                    },
+                                    "share": {}
+                                };
+                                with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~ ( - new Date() / 36e5)];</script>
+                        </div>
+                    </li>
+					{/dede:list}
+                   <style>
+							.page_change li{
+								float:left;
+								height: auto
+							}
+							.page_change .thisclass{
+								background: url({dede:global.cfg_templets_skin/}/images/page_bg.png) center no-repeat;
+								color: #fff;
+								background-size: 100% 100%;
+								display: inline-block;
+								text-align: center;
+								margin-right: 7px;
+								padding: 0 5px;
+								min-width: 23px;
+								height: 29px;
+								line-height: 29px;
+								border: 1px #d3d3d3 solid;
+								
+								font-size: 12px;
+								border-radius: 8px;
+								-webkit-transition: all .1s linear;
+								transition: all .1s linear;
+							}
+							.page_change li a{
+								display: inline-block;
+								text-align: center;
+								margin-right: 7px;
+								padding: 0 5px;
+								min-width: 23px;
+								height: 29px;
+								line-height: 29px;
+								border: 1px #d3d3d3 solid;
+								background: #ffffff;
+								font-size: 12px;
+								border-radius: 8px;
+								-webkit-transition: all .1s linear;
+								transition: all .1s linear;
+							}
+							
+						</style>
+                    <div class="page_change clear">
+                    	{dede:pagelist listitem='pageno,' /}
+					</div>
+                    <script type="text/javascript">function go() {
+                            var u = window.location.href;
+                            var h;
+                            if (window.location.href.indexOf('&') > 0) {
+                                h = u.substr(0, u.indexOf('&')) + "&page=" + $("#pe").val();
+                            } else {
+                                h = u + "&page=" + $("#pe").val();
+                            }
+                            location.href = h;
+                        }</script>
+                </ul>
+            </div>
+            {dede:include filename='right.htm'/}
+        </div>
+        
+        {dede:include filename='footer.htm'/}
+        <script type="text/javascript">setNav(2);</script></body>
+
+</html>

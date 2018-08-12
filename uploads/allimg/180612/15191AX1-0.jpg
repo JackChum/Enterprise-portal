@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Youku Universal Player</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        html, body { height:100%; }
+        body { margin:0; padding:0;}
+		html { overflow-x:hidden; overflow-y:hidden;}
+    </style>
+</head>
+<body>
+<div id="youku-playerBox" style="width:100%;height:100%;"></div>
+<script id='_youkujs_' type="text/javascript"></script>
+<script type="text/javascript" src="//player.youku.com/iframeapi"></script>
+<script src="//g.alicdn.com/player/player-collina/0.0.2/player-collina.min.js"></script>
+<script language="javascript">
+	var _QS = QS();
+	var arr = window.location.pathname.split('/');
+	var _vid = 0;
+	if(arr.length == 3 && arr[1] == 'embed' && arr[2].charAt(0) == 'X' ){
+		_vid = arr[2];
+	}
+	if(_QS.target == null ) _QS.target = "youku-playerBox";
+	if(_QS.client_id == null) _QS.client_id = "0edbfd2e4fc91b72";//"youkuind_";
+	if(_QS.autoplay != true) _QS.autoplay = false;
+	
+	var _collina;
+	// document.onreadystatechange = function(){
+	//   if(document.readyState == 'complete'){
+	
+	 window.onload = function(){
+		  _collina = new PlayerCollina({callback:function(ckey){
+			 console.log(ckey);
+			 var player = new YKU.Player('youku-playerBox',{
+			  styleid: '0', 
+			  client_id: _QS.client_id,
+			  vid: _vid,
+			  autoplay:_QS.autoplay,
+			  password:_QS.password,
+			//  newPlayer: true
+			//  events:_QS.events,
+			  onPlayStart:_QS.onPlayStart,
+			  onPlayEnd:_QS.onPlayEnd,
+			  doubleSpeed:_QS.doubleSpeed,
+			  ckey:_collina.getCkey()
+	         });
+		  }});
+	 };//当页面加载状态改变的时候执行这个方法.
+            
+	   
+</script>
+</body>      
+</html>
